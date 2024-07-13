@@ -174,8 +174,30 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
-
-
 }
-
 /*-------------- footer part ends -----------*/
+
+/* responsive part from here */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skill_container, 
+    .resume_container, 
+     footer,
+     .about_items
+    {
+        flex-direction: column;
+    }
+    footer, .about_items{
+        padding: 20px;
+    }
+    .footer_column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+  
+   
+}
